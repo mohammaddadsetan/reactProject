@@ -2,6 +2,7 @@ import React from 'react';
 import arrowimg from "./img/arrowimg.png";
 import logo from "./img/logo.png";
 import ReactDOM from 'react-dom/client';
+import bannerpic from './img/michelangelodavid.jpg';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,15 +10,6 @@ import reportWebVitals from './reportWebVitals';
 // import MyButton from './mybutton';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
-const hedstyl = {
-  display: "flex",
-  height: "3.5em",
-  position: "stiky",
-  backgroundColor: "black",
-  padding: "1em 2em"
-
-}
 
 function Wbutton(props) {
   return (
@@ -40,7 +32,7 @@ function Arrowbutton(props) {
 
 root.render(
   <div>
-    <header style={hedstyl}>
+    <header>
       <div className='header-logo'><img src={logo} alt="" /></div>
       <div className='header-options'>
       <Arrowbutton buttonName={{bname:'PRODUCTS'}}/>
@@ -52,7 +44,23 @@ root.render(
         <Wbutton buttonName={{bname:'SHOP'}}/>
       </div>
     </header>
+<main>
+<section className='banner'>
+<img src={bannerpic} alt="" />
+<div className='banner-text'>
+<h1>Designed to sell</h1>
+<div className='banner-subtext'>
+<Wbutton buttonName={{bname:'SHOP'}}/>
+<p>Get your free website trial today.
+No credit card required.</p>
+</div>
 
+</div>
+
+
+</section>
+
+</main>
 
 
 
