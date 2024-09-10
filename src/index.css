@@ -94,8 +94,9 @@ user-select: none;
 
 div.banner-text{
   position: absolute;
- top: 12em;
- left: 6em;
+ top:50%;
+ transform:translateY(-50%);
+ left: 7%;
 display: inline-block;
 user-select: none;
 
@@ -185,3 +186,37 @@ font-size: 1em;
   text-decoration: underline;
   text-underline-offset:.3em
 }
+
+section.description{
+background-color: rgb(232,228,228);
+height: 32em;
+display: grid;
+grid-template-columns: repeat(2 , 1fr);
+align-content: center;
+/* column-gap: 4em; */
+}
+
+section.description div.des-pic img{
+width:80%;
+height:22em;
+object-fit: cover;
+
+}
+
+div.descript-detail{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+max-width: 70%;
+
+
+}
+
+div.descript-detail div h1{
+margin-bottom: .7em;
+
+}
+div.descript-detail div p{
+  line-height:1.3em;
+}
+

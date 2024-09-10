@@ -3,6 +3,7 @@ import arrowimg from "./img/arrowimg.png";
 import logo from "./img/logo.png";
 import ReactDOM from 'react-dom/client';
 import bannerpic from './img/michelangelodavid.jpg';
+import michel from './img/michelangelo.png';
 import searchIcon from './img/search-icon.png'
 import './index.css';
 // import App from './App';
@@ -10,7 +11,6 @@ import reportWebVitals from './reportWebVitals';
 // import MyTitleBox from './mytitlebox';
 // import MyButton from './mybutton';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 
 function Wbutton(props) {
   return (
@@ -70,6 +70,28 @@ root.render(
           <a href="">Learn more about Domains</a>
         </div>
       </section>
+      <section className='padding description'>
+      <div className='des-pic'><img src={michel} alt="" /></div>
+        <div className='descript-detail'>
+          <div>
+            <h1>Create a website</h1>
+            <p>Choose from any of our industry-leading website templates, designer fonts, and color palettes.</p>
+          </div>
+          <div>
+            <h1>Sell your products and services</h1>
+            <p>Set up an ecommerce store, book appointments, or sell your skills—all on a single platform built just for you.</p>
+          </div>
+          <div>
+            <h1>Market your business</h1>
+            <p>On-brand email campaigns and social tools make it easy to retain customers and grow your base.</p>
+          </div>
+
+        </div>
+
+
+
+      </section>
+
 
 
 
