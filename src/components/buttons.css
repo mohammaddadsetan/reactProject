@@ -1,0 +1,12 @@
+ .button-flex-center{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+ 
+ 
+ .secondary-button,.linked-button{
+border-radius: 2px;
+}
+
+

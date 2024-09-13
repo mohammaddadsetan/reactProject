@@ -8,53 +8,23 @@ import searchIcon from './img/search-icon.png';
 import rightArrow from "./img/right-arrow.png";
 import itemCover from "./img/basketball.png";
 import checkedImg from "./img/checked-arrow.png";
+import Linkedbutton from "./components/linkedbutton";
+import Header from "./components/Header/header";
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import MyTitleBox from './mytitlebox';
-// import MyButton from './mybutton';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-function Wbutton(props) {
-  return (
-    <a href="#" className='w-button'>{props.buttonName.bname}</a>
-  )
-}
-
-function Button(props) {
-  return (
-    <div className='a-button'><a href="#">{props.buttonName.bname}</a></div>
-  )
-}
-
-function Arrowbutton(props) {
-  return (
-    <div className='a-button'><a href="#"><span>{props.buttonName.bname}</span><img src={arrowimg} alt="" /></a></div>
-  )
-}
-
 
 root.render(
   <div>
-    <header>
-      <div className='header-logo'><a href=""><img className='WH100' src={logo} alt="" /></a></div>
-      <div className='header-options'>
-        <Arrowbutton buttonName={{ bname: 'PRODUCTS' }} />
-        <Button buttonName={{ bname: 'TEMPLATES' }} />
-        <Arrowbutton buttonName={{ bname: 'RESORCES' }} />
-      </div>
-      <div className='header-login'>
-        <Button buttonName={{ bname: 'LOGIN' }} />
-        <Wbutton buttonName={{ bname: 'SHOP' }} />
-      </div>
-    </header>
+    <Header/>
     <main>
       <section className='banner'>
         <img className='WH100' src={bannerpic} alt="" />
         <div className='banner-text'>
           <h1>Designed to sell</h1>
           <div className='banner-subtext'>
-            <Wbutton buttonName={{ bname: 'SHOP' }} />
+            <Linkedbutton value={'SHOP'} background={'white'} width={'9.5em'} height={'4em'} />
             <p>Get your free website trial today.
               No credit card required.</p>
           </div>
@@ -70,7 +40,7 @@ root.render(
             <input className='WH100' type="text" placeholder='search for a domain' />
             <button className='search-button'>SEARCH</button>
           </div>
-          <a href="">Learn more about Domains</a>
+          <a href="./">Learn more about Domains</a>
         </div>
       </section>
       <section className='padding description display-grid'>
@@ -124,7 +94,7 @@ root.render(
     <footer className='padding'>
 
       <div className='footer-exchaing flex-col'>
-        <div className='footer-logo'><a href=""><img src={logo} alt="" /></a></div>
+        <div className='footer-logo'><a href=""><img className='WH100' src={logo} alt="" /></a></div>
         <button>$ USD<img className='WH100' src={arrowimg} alt="" /></button>
         <button>ENGLISH <img src={arrowimg} alt="" /></button>
         <div className='verfied'><img src={checkedImg} alt="" /> We are an ICANN accredited registrar.</div>
