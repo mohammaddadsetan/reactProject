@@ -1,8 +1,8 @@
 import './buttons.css';
-
-export default function Linkedbutton({value , background , width ,height}) {
+import Button from '@mui/material/Button';
+export default function Linkedbutton({variant , children , sx}) {
   return (
-    <a href="./" className="linked-button button-flex-center" style={{backgroundColor:background , width:width , height:height}}>{value}</a>
+    <Button variant={variant} sx={sx}>{children}</Button>
   )
 }
 
